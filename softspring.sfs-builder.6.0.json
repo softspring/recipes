@@ -1,0 +1,14 @@
+{
+    "manifests": {
+        "softspring/sfs-builder": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\SfsBuilder\\SfsBuilderBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "ref": "5df86d5916ed7b43532bc6efc8615f16750a72ae"
+        }
+    }
+}

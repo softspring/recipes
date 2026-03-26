@@ -1,0 +1,14 @@
+{
+    "manifests": {
+        "softspring/dynamic-form-type": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\Component\\DynamicFormType\\SfsDynamicFormTypeBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "ref": "58e884382032ff468988b79e5a85707cdab06885"
+        }
+    }
+}

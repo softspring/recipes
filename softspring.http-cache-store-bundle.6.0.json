@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "softspring/http-cache-store-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\Bundle\\HttpCacheStoreBundle\\SfsHttpCacheStoreBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/sfs_http_cache_store.yaml": {
+                    "contents": [
+                        "sfs_http_cache_store:",
+                        "    adapter: 'cache.app'",
+                        "    # logger: 'monolog.logger.http_cache'"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "58e884382032ff468988b79e5a85707cdab06885"
+        }
+    }
+}

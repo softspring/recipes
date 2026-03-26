@@ -1,0 +1,14 @@
+{
+    "manifests": {
+        "softspring/crudl-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\CrudlBundle\\SfsCrudlBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "ref": "58e884382032ff468988b79e5a85707cdab06885"
+        }
+    }
+}

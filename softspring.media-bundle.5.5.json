@@ -1,0 +1,34 @@
+{
+    "manifests": {
+        "softspring/media-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\MediaBundle\\SfsMediaBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/sfs_media.yaml": {
+                    "contents": [
+                        "imports:",
+                        "    - { resource: '@SfsMediaBundle/config/security/admin_role_hierarchy.yaml' }",
+                        "",
+                        "sfs_media:",
+                        "    driver: filesystem",
+                        "    filesystem:",
+                        "        path: '%kernel.project_dir%/public/media'",
+                        "        url: '/media'",
+                        "    media:",
+                        "        admin_controller: true"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "25fdd4e2e13ad54f27b5460a407b0378366b98e8"
+        }
+    }
+}

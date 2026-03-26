@@ -1,0 +1,35 @@
+{
+    "manifests": {
+        "softspring/components": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\Component\\Components\\SfsComponentsBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/",
+                    "templates/": "templates/"
+                }
+            },
+            "files": {
+                "config/packages/sfs_components.yaml": {
+                    "contents": [
+                        "twig:",
+                        "    globals:",
+                        "        sfs_components_theme: 'bootstrap5'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "templates/base.html.twig": {
+                    "contents": [
+                        "{% extends '@SfsComponents/base.html.twig' %}"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "12a23a9d692022eb64da13833df46c5e4406ef7b"
+        }
+    }
+}

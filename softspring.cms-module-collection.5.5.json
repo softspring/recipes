@@ -1,0 +1,18 @@
+{
+    "manifests": {
+        "softspring/cms-module-collection": {
+            "manifest": {
+                "add-lines": [
+                    {
+                        "file": "config/packages/sfs_cms.yaml",
+                        "content": "    collections:\n        - vendor/softspring/cms-module-collection\n",
+                        "position": "after_target",
+                        "target": "sfs_cms:",
+                        "warn_if_missing": true
+                    }
+                ]
+            },
+            "ref": "3c75eff5bb8160785c9cd081271f78ea5977354f"
+        }
+    }
+}

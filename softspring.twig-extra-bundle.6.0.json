@@ -1,0 +1,14 @@
+{
+    "manifests": {
+        "softspring/twig-extra-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\TwigExtraBundle\\SfsTwigExtraBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "ref": "2695dd9c0471090d51b4577d31190b6e6b4ccd56"
+        }
+    }
+}

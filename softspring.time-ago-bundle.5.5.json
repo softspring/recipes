@@ -1,0 +1,14 @@
+{
+    "manifests": {
+        "softspring/time-ago-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\TimeAgoBundle\\SfsTimeAgoBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "ref": "58e884382032ff468988b79e5a85707cdab06885"
+        }
+    }
+}

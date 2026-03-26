@@ -1,0 +1,14 @@
+{
+    "manifests": {
+        "softspring/permissions-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\PermissionsBundle\\SfsPermissionsBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "ref": "33f9a5ee1e98d788802e9aa3438222759fa09ce9"
+        }
+    }
+}

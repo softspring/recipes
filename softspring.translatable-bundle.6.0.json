@@ -1,0 +1,19 @@
+{
+    "manifests": {
+        "softspring/translatable-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\TranslatableBundle\\SfsTranslatableBundle": [
+                        "all"
+                    ]
+                },
+                "post-install-output": [
+                    "  * Optional translation API setup:",
+                    "    1. Create <comment>config/packages/sfs_translatable.yaml</comment> and enable the API driver when you need auto-translation",
+                    "    2. Import <comment>@SfsTranslatableBundle/config/routing/api_translate.yaml</comment> when you want the translation endpoint"
+                ]
+            },
+            "ref": "58e884382032ff468988b79e5a85707cdab06885"
+        }
+    }
+}

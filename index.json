@@ -2,45 +2,87 @@
     "recipes": {
         "softspring/cms-bundle": [
             "5.1",
-            "5.2"
+            "5.2",
+            "5.5",
+            "6.0"
         ],
         "softspring/cms-module-collection": [
             "5.1",
-            "5.2"
+            "5.2",
+            "5.5",
+            "6.0"
         ],
         "softspring/components": [
             "5.1",
-            "5.2"
+            "5.2",
+            "5.5",
+            "6.0"
+        ],
+        "softspring/crudl-bundle": [
+            "5.5",
+            "6.0"
+        ],
+        "softspring/dynamic-form-type": [
+            "5.5",
+            "6.0"
         ],
         "softspring/doctrine-migrations-version-comparator": [
             "5.1",
-            "5.2"
+            "5.2",
+            "5.5",
+            "6.0"
+        ],
+        "softspring/google-cloud-trace-bundle": [
+            "5.5",
+            "6.0"
+        ],
+        "softspring/http-cache-store-bundle": [
+            "5.5",
+            "6.0"
         ],
         "softspring/media-bundle": [
             "5.1",
-            "5.2"
+            "5.2",
+            "5.5",
+            "6.0"
         ],
         "softspring/permissions-bundle": [
             "5.1",
-            "5.2"
+            "5.2",
+            "5.5",
+            "6.0"
         ],
         "softspring/sfs-builder": [
-            "5.2"
+            "5.2",
+            "5.5",
+            "6.0"
+        ],
+        "softspring/time-ago-bundle": [
+            "5.5",
+            "6.0"
+        ],
+        "softspring/translatable-bundle": [
+            "5.5",
+            "6.0"
         ],
         "softspring/twig-extra-bundle": [
             "5.1",
-            "5.2"
+            "5.2",
+            "5.5",
+            "6.0"
         ],
         "softspring/user-bundle": [
             "5.1",
-            "5.2"
+            "5.2",
+            "5.5",
+            "6.0"
         ]
     },
-    "branch": "master",
+    "branch": "6.0",
     "is_contrib": true,
     "_links": {
         "repository": "github.com/softspring/recipes",
-        "origin_template": "{package}:{version}@github.com/softspring/recipes:master",
-        "recipe_template": "https://api.github.com/repos/softspring/recipes/contents/{package_dotted}.{version}.json"
+        "origin_template": "{package}:{version}@github.com/softspring/recipes:6.0",
+        "recipe_template": "https://api.github.com/repos/softspring/recipes/contents/{package_dotted}.{version}.json?ref=6.0"
     }
 }

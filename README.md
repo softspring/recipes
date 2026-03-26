@@ -11,7 +11,7 @@ Update composer.json:
     "extra": {
         "symfony": {
             "endpoint": [
-                "https://api.github.com/repos/softspring/recipes/contents/index.json",
+                "https://api.github.com/repos/softspring/recipes/contents/index.json?ref=6.0",
                 "flex://defaults"
             ]
         }
