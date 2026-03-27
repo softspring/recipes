@@ -26,6 +26,14 @@
                         "        admin_controller: true"
                     ],
                     "executable": false
+                },
+                "config/routes/sfs_media.yaml": {
+                    "contents": [
+                        "_sfs_media_admin:",
+                        "    resource: '@SfsMediaBundle/config/routing/admin_media.yaml'",
+                        "    prefix: /admin/media"
+                    ],
+                    "executable": false
                 }
             },
             "ref": "25fdd4e2e13ad54f27b5460a407b0378366b98e8"
