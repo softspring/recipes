@@ -1,5 +1,8 @@
 {
     "recipes": {
+        "softspring/account-bundle": [
+            "6.0"
+        ],
         "softspring/cms-bundle": [
             "5.1",
             "5.2",

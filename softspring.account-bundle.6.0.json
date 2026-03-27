@@ -1,0 +1,74 @@
+{
+    "manifests": {
+        "softspring/account-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\AccountBundle\\SfsAccountBundle": [
+                        "all"
+                    ]
+                },
+                "add-lines": [
+                    {
+                        "file": "config/routes.yaml",
+                        "content": "\n_sfs_account:\n    resource: \"routes/sfs_account.yaml\"\n    prefix: \"/app\"\n",
+                        "position": "bottom",
+                        "warn_if_missing": true
+                    }
+                ],
+                "post-install-output": [
+                    "  * Now you need to review the account integration:",
+                    "",
+                    "    Create your App\\Entity\\Account entity and wire it in config/packages/sfs_account.yaml",
+                    "    Optionally create an account-user relation entity if your application uses memberships",
+                    "    Enable only the routes you really need in config/routes/sfs_account.yaml",
+                    "    Run doctrine migrations after wiring the entities",
+                    ""
+                ]
+            },
+            "files": {
+                "config/packages/sfs_account.yaml": {
+                    "contents": [
+                        "imports:",
+                        "    - { resource: '@SfsAccountBundle/config/security/admin_role_hierarchy.yaml' }",
+                        "",
+                        "sfs_account:",
+                        "    class: App\\Entity\\Account",
+                        "    relation_class: ~",
+                        "    admin: false",
+                        "    route_param_name: '_account'",
+                        "    find_field_name: 'id'",
+                        "    twig_app_var_name: 'account'",
+                        "    filter:",
+                        "        enabled: true"
+                    ],
+                    "executable": false
+                },
+                "config/routes/sfs_account.yaml": {
+                    "contents": [
+                        "#_sfs_account_register:",
+                        "#    resource: '@SfsAccountBundle/config/routing/register.yaml'",
+                        "#    prefix: '/register/account'",
+                        "",
+                        "#_sfs_account_settings:",
+                        "#    resource: '@SfsAccountBundle/config/routing/settings.yaml'",
+                        "#    prefix: '/account/{_account}/settings'",
+                        "",
+                        "#_sfs_account_settings_users:",
+                        "#    resource: '@SfsAccountBundle/config/routing/settings_users.yaml'",
+                        "#    prefix: '/account/{_account}/settings/users'",
+                        "",
+                        "#_sfs_account_user_accounts:",
+                        "#    resource: '@SfsAccountBundle/config/routing/user_accounts.yaml'",
+                        "#    prefix: '/user/accounts'",
+                        "",
+                        "#_sfs_account_admin:",
+                        "#    resource: '@SfsAccountBundle/config/routing/admin_accounts.yaml'",
+                        "#    prefix: '/admin/accounts'"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "97b9828c4c38f3ef24fb4a2d9b263f705c2389e2"
+        }
+    }
+}
