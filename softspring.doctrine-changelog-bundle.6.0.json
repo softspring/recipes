@@ -1,0 +1,38 @@
+{
+    "manifests": {
+        "softspring/doctrine-changelog-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Softspring\\DoctrineChangeLogBundle\\SfsDoctrineChangeLogBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/sfs_doctrine_change_log.yaml": {
+                    "contents": [
+                        "sfs_doctrine_change_log:",
+                        "    collect:",
+                        "        request: true",
+                        "        user: true",
+                        "        action: true",
+                        "",
+                        "    storage:",
+                        "        enabled: false",
+                        "",
+                        "        # To persist in Doctrine, enable storage and set driver: doctrine.",
+                        "        # The application must provide a concrete App\\\\Entity\\\\ChangeLog entity.",
+                        "",
+                        "        # To persist in BigQuery, enable storage and set driver: big-query.",
+                        "        # Then add the big_query configuration block with project, dataset, and table options."
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "ref-doctrine-changelog-bundle-6-0"
+        }
+    }
+}
