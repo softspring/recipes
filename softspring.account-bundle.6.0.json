@@ -43,6 +43,39 @@
                     ],
                     "executable": false
                 },
+                "src/Entity/Account.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "namespace App\\Entity;",
+                        "",
+                        "use Doctrine\\ORM\\Mapping as ORM;",
+                        "use Softspring\\AccountBundle\\Model\\Account as AccountModel;",
+                        "",
+                        "#[ORM\\Entity]",
+                        "#[ORM\\HasLifecycleCallbacks]",
+                        "class Account extends AccountModel",
+                        "{",
+                        "    #[ORM\\Id]",
+                        "    #[ORM\\Column(length: 13, options: ['fixed' => true])]",
+                        "    #[ORM\\GeneratedValue(strategy: 'NONE')]",
+                        "    protected ?string $id = null;",
+                        "",
+                        "    public function getId(): ?string",
+                        "    {",
+                        "        return $this->id;",
+                        "    }",
+                        "",
+                        "    #[ORM\\PrePersist]",
+                        "    public function _generateId(): void",
+                        "    {",
+                        "        $this->id = uniqid();",
+                        "    }",
+                        "}",
+                        ""
+                    ],
+                    "executable": false
+                },
                 "config/routes/sfs_account.yaml": {
                     "contents": [
                         "#_sfs_account_register:",
